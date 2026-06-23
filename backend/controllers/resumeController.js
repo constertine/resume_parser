@@ -35,7 +35,7 @@ async function parseResumes(req, res){
       
       result.education = fieldExtractor.extractEducation(sections.education);
       result.experience = fieldExtractor.extractExperience(sections.experience);
-      result.skills = fieldExtractor.extractSkills(sections.skills);
+      result.skills = fieldExtractor.extractSkills(fullText);
 
     } catch (err) {
       console.error(`Failed to parse ${file.originalname}:`, err.message);
