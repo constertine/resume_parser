@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:4000/api';
+const API_BASE_URL = 'https://resume-parser-zxg1.onrender.com/';
 
 export async function parseResumes(files) {
   const formData = new FormData();
