@@ -19,8 +19,6 @@ yarn-error.log*
 dist/
 build/
 
-# Uploads (for your resume parser)
-uploads/
 
 # OS files
 .DS_Store
