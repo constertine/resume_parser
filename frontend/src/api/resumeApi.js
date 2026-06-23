@@ -6,7 +6,7 @@ export async function parseResumes(files) {
   const formData = new FormData();
   files.forEach((file) => formData.append('resumes', file));
 
-  const response = await axios.post(`${API_BASE_URL}/resumes/parse`, formData, {
+  const response = await axios.post(`${API_BASE_URL}/api/resumes/parse`, formData, {
     headers: { 'Content-Type': 'multipart/form-data' },
   });
 
